@@ -1,0 +1,138 @@
+{
+  "Analyze the image and extract general information about the report date, company name, and reporting period.": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " **Report Date:** March 28, 2024\n\n**Company Name:** MLK Chevron 2456 LLC\n\n**Reporting Period:** March 1, 2024 - March 28, 2024"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "LOW"
+          }
+        ]
+      }
+    ]
+  },
+  "Summarize the Profit and Loss Data insights": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " The Profit and Loss Data insights for MLK Chevron 2456 LLC (Milk Chevron) from March 1, 2024, to March 28, 2024, reveal a gross profit of $49,722.28. The sales total is $4,720.13, with a net profit of $32,012.28. The highest percentage of gross profit is in the \"Novelty\" category at 100%, followed by \"Tobacco\" at 74.86%. The \"Fuel\" category has the highest sales total at $86,376.32, but a lower gross profit percentage of 31.49%."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "LOW"
+          }
+        ]
+      }
+    ]
+  },
+  "Write me income data in dictionary format without extra characters": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " ```python\nincome_data = {\n    \"Sales\": 4720.13,\n    \"Purchase\": 2287.73,\n    \"Gross\": 2432.40,\n    \"Rebate\": 0.00,\n    \"%\": 51.72\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "LOW"
+          }
+        ]
+      }
+    ]
+  },
+  "Please extract the department names and their respective gross profit amounts from the provided image and format the data into dictionary 'department' keys and 'grossProfit' values without extra characters": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " ```python\ndepartment = {\n    \"Cigarette\": 227.63,\n    \"Drinks\": 7987.62,\n    \"Food\": 485.38,\n    \"Non Tax\": 3485.38,\n    \"Novelty\": 4728.84,\n    \"Tobacco\": 5779.76,\n    \"Fuel\": 14155.44,\n    \"Gallons\": 2435.00,\n    \"Lottery\": 2688.28,\n    \"Inventory\": 46731.00\n}\n```"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "LOW"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "LOW"
+          }
+        ]
+      }
+    ]
+  }
+}

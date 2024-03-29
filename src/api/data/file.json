@@ -1,0 +1,70 @@
+{
+  "GeneralInformation": {
+    "report_date": "Dept",
+    "company_name": "Cigarette",
+    "reporting_period": "$11,872.48 - $5,566.42"
+  },
+  "IncomeDetails": {
+    "total_sales": "$67,843.58",
+    "total_purchases": "$47,753.24",
+    "total_gross_profit": "$20,090.34",
+    "total_rebate": "$1,548.60",
+    "sales_margin_percentage": "31.18%"
+  },
+  "DepartmentBreakdown": [
+    {
+      "department_name": "Non Food",
+      "sales": "$1,600.48",
+      "purchases": "$61.86",
+      "gross_profit": "$1,538.62",
+      "gross_margin_percentage": "96.13%"
+    },
+    {
+      "department_name": "Non Tax",
+      "sales": "$544.07",
+      "gross_profit": "$544.07",
+      "gross_margin_percentage": "100.00%"
+    },
+    {
+      "department_name": "Novelty",
+      "sales": "$4,859.01",
+      "purchases": "$2,634.10",
+      "gross_profit": "$2,224.91",
+      "gross_margin_percentage": "45.79%"
+    },
+    {
+      "department_name": "Tobacco",
+      "sales": "$23,943.25",
+      "purchases": "$13,447.49",
+      "gross_profit": "$10,495.76",
+      "gross_margin_percentage": "43.84%"
+    },
+    {
+      "department_name": "Total",
+      "sales": "$67,843.58",
+      "purchases": "$47,753.24",
+      "gross_profit": "$20,090.34",
+      "rebate": "$1,548.60",
+      "gross_margin_percentage": "31.18%"
+    },
+    {
+      "gross_profit": "Adjusted",
+      "gross_margin_percentage": "36.60%"
+    },
+    {
+      "department_name": "Fuel",
+      "sales": "$75,763.20 ",
+      "purchases": "$66,105.38",
+      "gross_profit": "$9,219.46"
+    }
+  ],
+  "AdditionalIncomeStreams": {
+    "fuel_gross_profit": "$44,990.58",
+    "lottery_sales": 0,
+    "lottery_gross_profit": 0,
+    "atm_commission": 0,
+    "misc_income": 0,
+    "coam_commission": 0
+  },
+  "GrossProfit": "$44,990.58"
+}

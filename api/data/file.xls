@@ -1,0 +1,375 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Report</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>
+
+    <div class="print-header">
+        <div class="print-date"><i class="fa fa-print"></i> 3/27/2024</div>
+        <strong>
+            MLK CHEVRON 2456 LLC (Mlk Chevron)
+        </strong>
+        <div>P &amp; L Report <i class="fa fa-calendar"></i> 01 Jan 2024 - 31 Jan 2024</div>
+        <hr>
+    </div>
+
+<div id="report-margin">
+    <div class="form-row">
+        <div class="col-sm-auto income">
+            <h6>Income</h6>
+            <div class="table-responsive">
+                <table class="table table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            
+                            <th>Dept</th>
+                            <th>Sales</th>
+                            <th>Purchase</th>
+                            <th>Gross</th>
+                            <th>Rebate</th>
+                            <th>%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                <tr>
+                                    <td title="Cigarette">
+                                        Cigarette
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$12,441.93</td>
+                                    <td>
+$13,347.04                                </td>
+                                <td>
+($905.11)                            </td>
+                            <td>
+                                    $1,548.60                        </td>
+                            <td class="mgn">
+5.17%                            </td>
+                    </tr>
+                                <tr>
+                                    <td title="Drinks">
+                                        Drinks
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$12,582.36</td>
+                                    <td>
+$11,956.69                                </td>
+                                <td>
+$625.67                            </td>
+                            <td>
+                        </td>
+                            <td class="mgn c-red">
+4.97%                            </td>
+                    </tr>
+                                <tr>
+                                    <td title="Food">
+                                        Food
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$11,872.48</td>
+                                    <td>
+$6,306.06                                </td>
+                                <td>
+$5,566.42                            </td>
+                            <td>
+                        </td>
+                            <td class="mgn c-grn">
+46.89%                            </td>
+                    </tr>
+                                <tr>
+                                    <td title="Non Food">
+                                        Non Food
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$1,600.48</td>
+                                    <td>
+$61.86                                </td>
+                                <td>
+$1,538.62                            </td>
+                            <td>
+                        </td>
+                            <td class="mgn c-grn">
+96.13%                            </td>
+                    </tr>
+                                <tr>
+                                    <td title="Non Tax">
+                                        Non Tax
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$544.07</td>
+                                    <td>
+                                </td>
+                                <td>
+$544.07                            </td>
+                            <td>
+                        </td>
+                            <td class="mgn c-grn">
+100.00%                            </td>
+                    </tr>
+                                <tr>
+                                    <td title="Novelty">
+                                        Novelty
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$4,859.01</td>
+                                    <td>
+$2,634.10                                </td>
+                                <td>
+$2,224.91                            </td>
+                            <td>
+                        </td>
+                            <td class="mgn c-grn">
+45.79%                            </td>
+                    </tr>
+                                <tr>
+                                    <td title="Tobacco">
+                                        Tobacco
+                                        <div class="hidden">
+                                        </div>
+                                    </td>
+                                    <td>$23,943.25</td>
+                                    <td>
+$13,447.49                                </td>
+                                <td>
+$10,495.76                            </td>
+                            <td>
+                        </td>
+                            <td class="mgn c-grn">
+43.84%                            </td>
+                    </tr>
+                <tr class="active">
+                    <td>Total</td>
+                    <td>$67,843.58</td>
+                    <td>$47,753.24</td>
+                    <td>$20,090.34</td>
+                    <td>$1,548.60</td>
+                        <td class="c-grn">31.18%</td>
+                </tr>
+                <tr class="active">
+                    <td colspan="3"></td>
+                    <td colspan="2"><em>Adjusted</em></td>
+                        <td class="c-grn">36.60%</td>
+                </tr>
+                                                    <tr>
+                                <td>
+                                    Fuel                                 </td>
+                                <td>
+                                    <div><span>$75,763.20</span>&nbsp;</div>
+                                </td>
+                                <td>
+<div>$66,105.38</div>                                </td>
+                                <td>$9,219.46</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                <tr class="child-info">
+                                    <td>Gallons</td>
+                                    <td>23,146</td>
+                                    <td>22,626</td>
+                                    <td><span class="child-label">Diff</span>-520</td>
+                                </tr>
+                                <tr class="child-info">
+                                    <td>Inventory</td>
+                                    <td><span class="child-label">Begin</span>9,850</td>
+                                    <td><span class="child-label">End</span>9,330</td>
+                                    <td><span class="child-label">Diff</span> -520</td>
+                                </tr>
+                                                    <tr>
+                                <td>Lottery</td>
+                                <td>$38,045.50</td>
+                                <td></td>
+                                <td>$2,530.92</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                                                                                        <tr>
+                                    <td title="R J Reynolds (CIG)">R J Reynolds (CIG)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>$1,548.60</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td title="ATM Commission">ATM Commission</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>$4,620.00</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td title="Misc Income">Misc Income</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>$2,164.83</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td title="COAM Commission">COAM Commission</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>$4,816.43</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                        <tr class="active">
+
+                            <th>Gross Profit</th>
+                            <th></th>
+                            <th></th>
+                            <th>$44,990.58</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </tbody>
+                </table>
+                    <hr>
+                    <table class="table table-condensed">
+                        <tbody>
+                                    <tr data-expid="2994">
+                                        <td>Sales Tax</td>
+                                        <td>$4,888.40</td>
+                                    </tr>
+                            <tr>
+                                <th>Total</th>
+                                <th>$4,888.40</th>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        <div class="col-sm-auto expense">
+            <h6>Expense</h6>
+            <div class="table-responsive">
+                <table class="table table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                <tr data-id="5201">
+                                    <td title="Accounting Fees">Accounting Fees</td>
+                                    <td>
+                                            $202.75
+                                    </td>
+                                </tr>
+                                <tr data-id="6010">
+                                    <td title="Bank Charges">Bank Charges</td>
+                                    <td>
+                                            $169.20
+                                    </td>
+                                </tr>
+                                <tr data-id="5212">
+                                    <td title="Credit Card Fees">Credit Card Fees</td>
+                                    <td>
+                                            $171.51
+                                    </td>
+                                </tr>
+                                <tr data-id="0">
+                                    <td title="Credit Cards Fees">Credit Cards Fees</td>
+                                    <td>
+$2,676.32                                    </td>
+                                </tr>
+                                <tr data-id="6009">
+                                    <td title="Insurance">Insurance</td>
+                                    <td>
+                                            $983.17
+                                    </td>
+                                </tr>
+                                <tr data-id="5211">
+                                    <td title="Jobber Fees">Jobber Fees</td>
+                                    <td>
+                                            $207.09
+                                    </td>
+                                </tr>
+                                <tr data-id="6008">
+                                    <td title="Maintenance">Maintenance</td>
+                                    <td>
+                                            $325.00
+                                    </td>
+                                </tr>
+                                <tr data-id="6000">
+                                    <td title="Misc Expenses">Misc Expenses</td>
+                                    <td>
+                                            $1,303.37
+                                    </td>
+                                </tr>
+                                <tr data-id="5002">
+                                    <td title="Payroll Taxes">Payroll Taxes</td>
+                                    <td>
+                                            $684.99
+                                    </td>
+                                </tr>
+                                <tr data-id="0">
+                                    <td title="Purchase Other Charges">Purchase Other Charges</td>
+                                    <td>
+$58.81                                    </td>
+                                </tr>
+                                <tr data-id="5321">
+                                    <td title="Rent">Rent</td>
+                                    <td>
+                                            $16,000.00
+                                    </td>
+                                </tr>
+                                <tr data-id="6201">
+                                    <td title="Salary &amp; Wages">Salary &amp; Wages</td>
+                                    <td>
+                                            $20,598.00
+                                    </td>
+                                </tr>
+                                <tr data-id="6003">
+                                    <td title="Utilities">Utilities</td>
+                                    <td>
+                                            $2,157.46
+                                    </td>
+                                </tr>
+                        <tr class="active">
+                            <th>Total</th>
+                            <th>$45,537.67</th>
+                        </tr>
+                        <tr class="danger">
+                            <th>Net Profit</th>
+                            <th>($547.09)</th>
+                        </tr>
+                        <tr>
+                            <th>Inventory +/-</th>
+                            <th>$5,931.14</th>
+                        </tr>
+                    </tbody>
+                </table>
+                    <hr>
+                    <table class="table table-condensed">
+                        <tbody>
+                                    <tr data-expid="3001">
+                                        <td>Owner Withdraw</td>
+                                        <td>
+                                            $27,114.00
+                                        </td>
+                                    </tr>
+                                    <tr data-expid="2001">
+                                        <td>Sales Tax</td>
+                                        <td>
+                                            $3,000.54
+                                        </td>
+                                    </tr>
+                            <tr>
+                                <th>Total</th>
+                                <th>$30,114.54</th>
+                            </tr>
+                        </tbody>
+                    </table>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</table></body></html>
