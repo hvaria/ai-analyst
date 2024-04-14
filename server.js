@@ -89,7 +89,7 @@ const upload = multer({
   }
 });
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
 // Endpoint to handle file uploads and process data
 app.post('/api/upload', upload.single('file'), (req, res) => {
