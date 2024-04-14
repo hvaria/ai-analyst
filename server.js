@@ -112,6 +112,7 @@ app.get('/api/summary/file.json', async (req, res) => {
     try {
         
         const summary = await generateSummary();
+        console.log(summary);
         // fs.writeFileSync(jsonFilePath, JSON.stringify(summary, null, 2));
         await fs.promises.writeFile(jsonFilePath, JSON.stringify(summary, null, 2));
 
