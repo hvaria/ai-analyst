@@ -112,7 +112,9 @@ app.get('/api/summary/file.json', async (req, res) => {
     try {
         
         const summary = await generateSummary();
-        fs.writeFileSync(jsonFilePath, JSON.stringify(summary, null, 2));
+        // fs.writeFileSync(jsonFilePath, JSON.stringify(summary, null, 2));
+        await fs.promises.writeFile(jsonFilePath, JSON.stringify(summary, null, 2));
+
         // const x = await generateImage();
         res.json(summary); // Send back the summary or a part of it as needed
     } catch (error) {
