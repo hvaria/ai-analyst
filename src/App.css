@@ -71,3 +71,83 @@ button {
   margin: 10px;
   cursor: pointer;
 }
+
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.insights-container {
+  flex: 1;
+}
+
+.revenue-summary-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  max-width: 100%; /* Adjust as needed */
+  word-wrap: break-word;
+  overflow: auto; /* Adds a scrollbar if content overflows */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.summary-page {
+  background-color: #222;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.summary-page .revenue-summary-box {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.summary-page input[type="text"],
+.summary-page button {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode-chatbot {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode-chatbot .chat-header {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode-chatbot .chat-input {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode-chatbot .send-button {
+  background-color: #666;
+  color: #fff;
+}

@@ -4,12 +4,14 @@
 const fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
-
 require('dotenv').config();
+const API_KEY = process.env.API_KEY;
+// require('dotenv').config();
 
 
 // Define your API endpoint and key securely
-const API_KEY = process.env.API_KEY; // Securely manage your API key
+// const API_KEY = process.env.API_KEY; // Securely manage your API key
+// const API_KEY = 'AIzaSyANLE4EA-Lyr24W1SatgI2fr24UvvFzcLY'
 
 const API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent';
 
@@ -19,17 +21,15 @@ const generateSummary = async () => {
     "Analyze the image and extract general information about the report date, company name, and reporting period.",
     'Summarize the Profit and Loss Data insights',
     'Write me income data in dictionary format without extra characters',
-    "Please extract the department names and their respective gross profit amounts from the provided image and format the data into dictionary 'department' keys and 'grossProfit' values without extra characters"
-    // "Extract the total sales for each department from the P&L sheet, structure this information in a JSON format for visualization.",
-    // "Dynamically identify and extract the gross profit amounts for each department and encode this data in for charting and analysis in dictionary",
-    // "Retrieve detailed expenses from the P&L sheet, categorizing them by type (Maintenance, Wages, Utilities, etc.), and present in JSON format for cost analysis",
-    // "Calculate the profit margin for each department using sales and gross profit data, and structure the results in a JSON object for margin analysis.",
-    // "Collect sales and purchase costs for each department from the P&L sheet, then create a JSON object to compare these figures in a visualization.",
-    // "Extract beginning and ending inventory values, compute the inventory turnover rate, and organize these metrics in a JSON structure for inventory analysis.",
-    // "Identify rebates received by department, extract these values, and encode them in a JSON object for analyzing the impact of rebates on sales.",
-    // "Separately extract sales data for lottery tickets, structure it in a JSON format, and use this data to assess the performance of lottery sales."
-    // 'Generate Gross profit Bar Chart by department: This chart would be a bar chart that shows the gross profit for each department. This would be calculated by subtracting the cost of goods sold from the revenue for each department.'
-    // Add more prompts as needed for department breakdown, additional income streams, etc.
+    "Please extract the department names and their respective gross profit amounts from the provided image and format the data into dictionary 'department' keys and 'grossProfit' values without extra characters",
+    'Analyze the image and give me only revenue summary',
+    'Analyze the image and write me only revenue sumamary analysis',
+    'Analyze the image and give me only cost of goods summary',
+    'Analyze the image and give me only detailed cost of goods analysis',
+    'Analyze the image and give me only expense summary',
+    'Analyze the image and give me only detailed expense analysis',
+    'Analyze the image and give me only Profit summary',
+    'Analyze the image and give me only detailed Profit analysis'
   ];
 
   const imagePath = path.join(__dirname, 'api/data', 'file.png');

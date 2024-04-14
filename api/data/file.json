@@ -15,19 +15,19 @@
         "safetyRatings": [
           {
             "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_HATE_SPEECH",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_HARASSMENT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           }
         ]
       }
@@ -39,7 +39,7 @@
         "content": {
           "parts": [
             {
-              "text": " The Profit and Loss Data insights for MLK Chevron 2456 LLC (Milk Chevron) from March 1, 2024, to March 28, 2024, reveal a gross profit of $49,722.28. The sales total is $4,720.13, with a net profit of $32,012.28. The highest percentage of gross profit is in the \"Novelty\" category at 100%, followed by \"Tobacco\" at 74.86%. The \"Fuel\" category has the highest sales total at $86,376.32, but a lower gross profit percentage of 31.49%."
+              "text": " The Profit and Loss Data insights for MLK Chevron 2456 LLC (Milk Chevron) for the period of March 1, 2024, to March 28, 2024, reveal a gross profit of $49,722.28. The sales total for the period was $4,720.13. The expenses incurred during this period amounted to $17,710.00, resulting in a net profit of $32,012.28.\n\nThe highest percentage of gross profit was 100% in the Non-Tax category, followed by 74.86% in the Tobacco category. The lowest percentage of gross profit was 1.52% in the Cigarettes category.\n\nThe largest expense was $15,453.00 for salaries and wages, followed by $872.00 for utilities and $630.00 for maintenance.\n\nOverall, the Profit and Loss Data insights provide valuable information on the financial performance of MLK Chevron 2456 LLC (Milk Chevron) for the period of March 1, 2024, to March 28, 2024."
             }
           ],
           "role": "model"
@@ -49,7 +49,7 @@
         "safetyRatings": [
           {
             "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_HATE_SPEECH",
@@ -61,7 +61,7 @@
           },
           {
             "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           }
         ]
       }
@@ -73,7 +73,7 @@
         "content": {
           "parts": [
             {
-              "text": " ```python\nincome_data = {\n    \"Sales\": 4720.13,\n    \"Purchase\": 2287.73,\n    \"Gross\": 2432.40,\n    \"Rebate\": 0.00,\n    \"%\": 51.72\n}\n```"
+              "text": " ```python\nincome_data = {\n    \"Sales\": 4720.13,\n    \"Purchase\": 2287.87,\n    \"Gross\": 2432.26,\n    \"Rebate\": 0.00,\n    \"%\": 51.72\n}\n```"
             }
           ],
           "role": "model"
@@ -83,7 +83,7 @@
         "safetyRatings": [
           {
             "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_HATE_SPEECH",
@@ -95,7 +95,7 @@
           },
           {
             "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           }
         ]
       }
@@ -107,7 +107,7 @@
         "content": {
           "parts": [
             {
-              "text": " ```python\ndepartment = {\n    \"Cigarette\": 227.63,\n    \"Drinks\": 7987.62,\n    \"Food\": 485.38,\n    \"Non Tax\": 3485.38,\n    \"Novelty\": 4728.84,\n    \"Tobacco\": 5779.76,\n    \"Fuel\": 14155.44,\n    \"Gallons\": 2435.00,\n    \"Lottery\": 2688.28,\n    \"Inventory\": 46731.00\n}\n```"
+              "text": " ```python\ndepartment = {\n    \"Cigarette\": 227.63,\n    \"Drinks\": 7987.62,\n    \"Food\": 485.38,\n    \"Non Tax\": 3485.84,\n    \"Novelty\": 4728.84,\n    \"Tobacco\": 5779.76,\n    \"Fuel\": 14155.44,\n    \"Gallons\": 2435.00,\n    \"Lottery\": 2686.28,\n    \"Inventory\": 46731.00\n}\n```"
             }
           ],
           "role": "model"
@@ -117,19 +117,291 @@
         "safetyRatings": [
           {
             "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_HATE_SPEECH",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_HARASSMENT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
           },
           {
             "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
-            "probability": "LOW"
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only revenue summary": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " **Revenue Summary**\n\n**Gross Sales**: $66,369.56\n\n**Rebate**: $0.00\n\n**Net Sales**: $66,369.56\n\n**Cost of Goods Sold**: $33,470.98\n\n**Gross Profit**: $32,012.28"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and write me only revenue sumamary analysis": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " **Revenue Summary Analysis**\n\nThe report shows the revenue summary of MLK Chevron 2456 LLC for the period of March 1, 2024, to March 28, 2024. The total revenue generated during this period was $4,720.13. The cost of goods sold was $32,470.98, resulting in a gross profit of $14,749.15. \n\nThe highest revenue was generated from the sale of cigarettes, which brought in $14,981.04. This was followed by gasoline, which generated $86,276.32. The lowest revenue was generated from the sale of lottery tickets, which brought in only $2,436.00.\n\nThe report also shows the net profit of the company for the period, which was $32,012.28. This is after deducting all expenses, including maintenance, salaries, and utilities."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only cost of goods summary": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " Cost of goods: $33,470.98"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only detailed cost of goods analysis": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " Cost of goods sold is $33,470.98. This includes the cost of purchases ($15,208.77), freight-in ($1,034.56), and beginning inventory ($17,227.65). The cost of goods sold is calculated by adding these three costs together and then subtracting the ending inventory ($2,686.28)."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only expense summary": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " **Income**\n- Gross Profit: $49,722.28\n- Total Income: $4,720.13\n\n**Expenses**\n- Total Expenses: $17,710.00\n- Net Profit: $32,012.28"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only detailed expense analysis": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " **Income**\n\n* Sales: $66,369.56\n* Purchases: $33,470.98\n* Gross Profit: $32,898.58\n* Expenses: $17,710.00\n* Net Income: $15,188.58\n\n**Expenses**\n\n* Maintenance: $630.00\n* Misc. Expenses: $15,453.00\n* Salaries & Wages: $872.00\n* Utilities: $1,755.00\n\n**Inventory**\n\n* Beginning Inventory: $46,376.15\n* Ending Inventory: $48,044.43\n* Difference: $1,668.28"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only Profit summary": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " **Profit Summary**\nGross Profit: $49,722.28\nTotal Expense: $17,710.00\nNet Profit: $32,012.28"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ]
+  },
+  "Analyze the image and give me only detailed Profit analysis": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": " The Profit and Loss statement for MLK Chevron 2456 LLC for the period of March 1, 2024, to March 28, 2024, shows a gross profit of $49,722.28. This is calculated by subtracting the cost of goods sold ($33,470.98) from the net sales ($83,193.26). The gross profit margin is 49.57%.\n\nThe statement also shows a net profit of $32,012.28. This is calculated by subtracting the total expenses ($17,710.00) from the gross profit ($49,722.28). The net profit margin is 38.56%.\n\nThe statement shows that the company's largest expense is cost of goods sold, which accounts for 56.44% of net sales. The second largest expense is labor, which accounts for 18.89% of net sales.\n\nThe company's net profit has increased by 15.6% compared to the previous year. This is due to an increase in net sales and a decrease in expenses."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
           }
         ]
       }
