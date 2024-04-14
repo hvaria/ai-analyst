@@ -53,7 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^latest_version"
+    "concurrently": "^8.2.2"
   }
 
 }
