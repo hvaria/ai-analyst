@@ -106,25 +106,29 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
 
 
 
+
+
 app.get('/api/summary/file.json', async (req, res) => {
     const jsonFilePath = path.join(__dirname, 'api/data', 'file.json'); // Static filename used
 
-    try {
-        
-        const summary = await generateSummary();
-        console.log(summary);
-        // fs.writeFileSync(jsonFilePath, JSON.stringify(summary, null, 2));
-        await fs.promises.writeFile(jsonFilePath, JSON.stringify(summary, null, 2));
+    console.log("Starting summary generation...");  // Debug: Initial log statement
 
-        // const x = await generateImage();
-        res.json(summary); // Send back the summary or a part of it as needed
+    try {
+        console.log("Calling generateSummary()...");  // Debug: Before calling generateSummary
+        const summary = await generateSummary();
+        console.log("Summary generated:", summary);  // Debug: Log summary data
+
+        console.log(`Writing data to ${jsonFilePath}...`);  // Debug: Before writing to file
+        await fs.promises.writeFile(jsonFilePath, JSON.stringify(summary, null, 2));
+        console.log("Data written to file successfully.");  // Debug: Confirm successful write
+
+        res.json(summary);  // Send back the summary or a part of it as needed
+        console.log("Summary sent to client.");  // Debug: Confirm successful response to client
     } catch (error) {
-        // Here, catch both file reading and summary generation errors
-        console.error('Error generating summary:', error);
+        console.error('Error generating summary:', error);  // Debug: Log any errors
         res.status(500).send('Error generating summary.');
     }
 });
-
 
 
 
