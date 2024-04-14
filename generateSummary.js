@@ -6,12 +6,9 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config();
 const API_KEY = process.env.API_KEY;
-// require('dotenv').config();
 
 
-// Define your API endpoint and key securely
-// const API_KEY = process.env.API_KEY; // Securely manage your API key
-// const API_KEY = 'AIzaSyANLE4EA-Lyr24W1SatgI2fr24UvvFzcLY'
+
 
 const API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-vision:generateContent';
 
@@ -66,12 +63,12 @@ const generateSummary = async () => {
     }
   }
 
-  // console.log('Compiled results:', JSON.stringify(results, null, 2));
+
   return results;
 };
 
 
 
 
-
+await Promise.all(requests);
  module.exports = generateSummary
