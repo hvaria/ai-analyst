@@ -1,0 +1,45 @@
+runtime: nodejs16  # Specify the Node.js version you are using
+env: flex         # Use the flexible environment for greater control
+
+# Automatic scaling configuration:
+automatic_scaling:
+  min_num_instances: 1   # Minimum number of instances
+  max_num_instances: 3   # Maximum number of instances
+  target_cpu_utilization: 0.65  # Scale instances based on CPU usage
+  cool_down_period_sec: 180     # The amount of time to wait before scaling down
+
+# Resources allocated per instance:
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+# Environment variables:
+env_variables:
+  NODE_ENV: 'production'
+  API_KEY: 'YOUR_API_KEY_HERE'  # Example environment variable for an API key
+
+# Health checks (optional, good to have for production deployments):
+health_check:
+  enable_health_check: true
+  check_interval_sec: 30
+  timeout_sec: 4
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+
+# Network settings (optional, customize if necessary):
+network:
+  session_affinity: true
+
+# Handlers: Define URL handlers and static file serving (important for single-page applications like React)
+handlers:
+  - url: /static
+    static_dir: build/static
+
+  - url: /(.*\.(json|ico|js|css|png|jpg|svg|gif|woff|woff2|ttf|map))$
+    static_files: build/\1
+    upload: build/(.*\.(json|ico|js|css|png|jpg|svg|gif|woff|woff2|ttf|map))$
+
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
