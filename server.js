@@ -12,15 +12,20 @@ const API_KEY = process.env.API_KEY;
 
 
 const app = express();
-app.use(express.json());
+// app.use(express.json());
 
 
 // Serve static files from the "api/data" directory
-app.use('/api/data', express.static(path.join(__dirname, 'api/data')));
+app.use(express.static(path.join(__dirname, 'build')));
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/build/index.html'));
+});
 
 
-
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -84,7 +89,7 @@ const upload = multer({
   }
 });
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'build')));
+// app.use(express.static(path.join(__dirname, 'build')));
 
 // Endpoint to handle file uploads and process data
 app.post('/api/upload', upload.single('file'), (req, res) => {
@@ -101,22 +106,29 @@ app.post('/api/upload', upload.single('file'), (req, res) => {
 
 
 
+
+
 app.get('/api/summary/file.json', async (req, res) => {
     const jsonFilePath = path.join(__dirname, 'api/data', 'file.json'); // Static filename used
 
+    console.log("Starting summary generation...");  // Debug: Initial log statement
+
     try {
-        
+        console.log("Calling generateSummary()...");  // Debug: Before calling generateSummary
         const summary = await generateSummary();
-        fs.writeFileSync(jsonFilePath, JSON.stringify(summary, null, 2));
-        // const x = await generateImage();
-        res.json(summary); // Send back the summary or a part of it as needed
+        console.log("Summary generated:", summary);  // Debug: Log summary data
+
+        console.log(`Writing data to ${jsonFilePath}...`);  // Debug: Before writing to file
+        await fs.promises.writeFile(jsonFilePath, JSON.stringify(summary, null, 2));
+        console.log("Data written to file successfully.");  // Debug: Confirm successful write
+
+        res.json(summary);  // Send back the summary or a part of it as needed
+        console.log("Summary sent to client.");  // Debug: Confirm successful response to client
     } catch (error) {
-        // Here, catch both file reading and summary generation errors
-        console.error('Error generating summary:', error);
+        console.error('Error generating summary:', error);  // Debug: Log any errors
         res.status(500).send('Error generating summary.');
     }
 });
-
 
 
 
