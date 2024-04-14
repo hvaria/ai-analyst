@@ -68,7 +68,4 @@ const generateSummary = async () => {
 };
 
 
-
-
-await Promise.all(requests);
  module.exports = generateSummary
