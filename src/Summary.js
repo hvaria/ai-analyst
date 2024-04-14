@@ -127,7 +127,7 @@ const Summary = () => {
       try {
         const response = await fetch(`/api/summary/file.json`);
         if (!response.ok) {
-          throw new Error(`HTTP Error: ${response.status}`);
+          throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
 
