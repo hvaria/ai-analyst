@@ -4,7 +4,6 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const xlsx = require('node-xlsx').default;
-// Import the preprocessData function
 const generateSummary = require('./generateSummary');
 require('dotenv').config();
 const API_KEY = process.env.API_KEY;
@@ -117,7 +116,13 @@ app.get('/api/summary/file.json', async (req, res) => {
     }
 });
 
-
+app.get('/api/summary/status', (req, res) => {
+    if (fs.existsSync(jsonFilePath)) {
+        res.json({ status: 'completed' });
+    } else {
+        res.json({ status: 'processing' });
+    }
+});
 
 
 const axios = require('axios');
