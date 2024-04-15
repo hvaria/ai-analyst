@@ -20,6 +20,7 @@ const Summary = () => {
   const [userMessage, setUserMessage] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [retryCount, setRetryCount] = useState(0);
 
   const handleUserInput = (e) => {
     setUserMessage(e.target.value);
@@ -198,15 +199,24 @@ const Summary = () => {
 
         setLoading(false);
       } catch (error) {
+        console.error('Failed to fetch summary:', error);
         setError(`Failed to fetch summary: ${error.message}`);
-        setLoading(false);
+        if (retryCount < 3) { // Retry up to 3 times
+          setTimeout(() => {
+            setRetryCount(retryCount + 1);
+            fetchSummary();
+          }, 2000); // Retry after 2 seconds
+        } else {
+          setLoading(false);
+        }
       }
     };
 
     fetchSummary();
-  }, []);
+  }, [retryCount]);
 
-  if (loading) return <p>Loading...</p>;
+  // if (loading) return <p>Loading...</p>;
+  if (loading) return <div className="loader"></div>;  
   if (error) return <p>Error: {error}</p>;
 
   return (
