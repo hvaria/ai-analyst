@@ -21,29 +21,6 @@ const Summary = () => {
   const [chatHistory, setChatHistory] = useState([]);
   const [isChatOpen, setIsChatOpen] = useState(false);
 
-
-  function fetchWithTimeout(resource, options = {}, timeout = 8000) {
-    const controller = new AbortController();
-    const id = setTimeout(() => controller.abort(), timeout);
-    return fetch(resource, {
-      ...options,
-      signal: controller.signal
-    })
-    .then(response => {
-      clearTimeout(id);
-      if (!response.ok) {
-        throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
-      }
-      return response.json();
-    })
-    .catch(error => {
-      if (error.name === 'AbortError') {
-        throw new Error('Response timed out');
-      }
-      throw error;
-    });
-  }
-
   const handleUserInput = (e) => {
     setUserMessage(e.target.value);
   };
@@ -148,8 +125,7 @@ const Summary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const response = await fetchWithTimeout('/api/summary/file.json');
-        // const response = await fetch(`/api/summary/file.json`);
+        const response = await fetch(`/api/summary/file.json`);
         if (!response.ok) {
           throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
         }
