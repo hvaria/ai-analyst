@@ -4,8 +4,8 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 const xlsx = require('node-xlsx').default;
-// Import the preprocessData function
 const generateSummary = require('./generateSummary');
+
 require('dotenv').config();
 const API_KEY = process.env.API_KEY;
 
@@ -37,7 +37,7 @@ const storage = multer.diskStorage({
   }
 });
 
-// const upload = multer({ storage: storage });
+
 
 // File filter to only allow image uploads
 const fileFilter = (req, file, cb) => {
@@ -165,8 +165,7 @@ app.post('/api/chatbot', async (req, res) => {
     // Assuming apiResponse has the structure you've indicated in the error message:
     const generatedContent = apiResponse.candidates[0].content.parts[0].text;
 
-    // // Extract the text from the content object
-    // const generatedText = generatedContent.parts[0].text;
+
 
 
 
