@@ -39,6 +39,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+# Configuration
+
+## Setting Up the .env File
+
+To run the application correctly, you need to set up environment variables:
+
+1. **Create a `.env` file** in the root directory of your project.
+2. **Add the following line to the `.env` file**:
+   ```plaintext
+   REACT_APP_API_KEY=your_api_key_here
+# Specific Requirements for the Profit and Loss Statement
+
+This application is designed to work with a specific format of the Profit and Loss (P&L) statement. Ensure your P&L statement adheres to the following structure:
+
+- **Format**: Must be in a `.csv` format
+- **Columns**: Date, Category, Revenue, Expenses, Net Profit
+- **Data Formatting**: Ensure that the data is formatted consistently (e.g., dates in `YYYY-MM-DD` format)
+
+## Acceptable Input Format
+
+- **Screenshot Requirements**: The application only accepts screenshots of the P&L statements. Ensure that the screenshots are clear and legible, covering all required columns (Date, Category, Revenue, Expenses, Net Profit). Unsupported file types or improperly formatted screenshots will not be processed correctly by the application.
+![image](https://github.com/hvaria/ai-analyst/assets/98721412/90015ded-350a-412d-ab1a-ea979bd54e97)
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
