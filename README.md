@@ -48,7 +48,7 @@ To run the application correctly, you need to set up environment variables:
 1. **Create a `.env` file** in the root directory of your project.
 2. **Add the following line to the `.env` file**:
    ```plaintext
-   REACT_APP_API_KEY=your_api_key_here
+   API_KEY=your_api_key_here
 # Specific Requirements for the Profit and Loss Statement
 
 This application is designed to work with a specific format of the Profit and Loss (P&L) statement. Ensure your P&L statement adheres to the following structure:
